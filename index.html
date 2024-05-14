@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Shopping Website</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#women">Women's</a></li>
+          <li><a href="#men">Men's</a></li>
+          <li><a href="#Children">Children</a></li>
+          <li class="search-box">
+            <input type="text" placeholder="Search..." />
+            <button><i class="fas fa-search"></i></button>
+          </li>
+          <li><a href="#">My Account</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+        <div class="hamburger">
+          <i class="fas fa-bars"></i>
+        </div>
+      </nav>
+
+      <!------promotion-area---------->
+      <div class="promotion-area">
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <img src="img/buy2get1.jpeg" alt="Promotion Image 1" />
+          </div>
+
+          <div class="mySlides fade">
+            <img src="img/suppersale.jpeg" alt="Promotion Image 2" />
+          </div>
+
+          <div class="mySlides fade">
+            <img src="img/specaloffer.jpeg" alt="Promotion Image 1" />
+          </div>
+
+          <div class="mySlides fade">
+            <img src="img/off10.jpeg" alt="Promotion Image 2" />
+          </div>
+
+          <!-- Add more images here -->
+
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br />
+
+        <div style="text-align: center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <!-- Add more dots for additional images -->
+        </div>
+      </div>
+      <!------------home-section-------------------->
+      <section class="home-section" id="home">
+        <div class="product-card">
+          <img src="img/pic5.jpg" alt="Product 1" width="400px" />
+          <div class="product-info">
+            <h3>Black shoes for men</h3>
+            <div class="rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+            </div>
+            <h3>10$</h3>
+            <button class="shop-now-btn">Shop Now</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="img/pic1.jpeg" alt="Product 1" />
+          <div class="product-info">
+            <h3>Womens knit jacket two piece</h3>
+            <div class="rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+            </div>
+            <h3>25$</h3>
+            <button class="shop-now-btn">Shop Now</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="img/pic2.jpeg" alt="Product 1" />
+          <div class="product-info">
+            <h3>Denim jacket men</h3>
+            <div class="rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+            </div>
+            <h3>25$</h3>
+            <button class="shop-now-btn">Shop Now</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="img/pic3.jpeg" alt="Product 1" />
+          <div class="product-info">
+            <h3>T-shirt for men white & blue lines</h3>
+            <div class="rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+            </div>
+            <h3>10$</h3>
+            <button class="shop-now-btn">Shop Now</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="img/pic5.jpeg" alt="Product 1" />
+          <div class="product-info">
+            <h3>Laincho men Shrug</h3>
+            <div class="rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+            </div>
+            <h3>8$</h3>
+            <button class="shop-now-btn">Shop Now</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="img/pic6.jpeg" alt="Product 1" />
+          <div class="product-info">
+            <h3>Women Green Heels</h3>
+            <div class="rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+            </div>
+            <h3>14$</h3>
+            <button class="shop-now-btn">Shop Now</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="img/pic7.jpeg" alt="Product 1" />
+          <div class="product-info">
+            <h3>Grey pleated T-shirt</h3>
+            <div class="rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+            </div>
+            <h3>40$</h3>
+            <button class="shop-now-btn">Shop Now</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="img/pic8.jpeg" alt="Product 1" />
+          <div class="product-info">
+            <h3>Soft denim wrap For women</h3>
+            <div class="rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+            </div>
+            <h3>43$</h3>
+            <button class="shop-now-btn">Shop Now</button>
+          </div>
+        </div>
+        <!-- Add more product cards here -->
+      </section>
+
+      <!----------Women_section---------->
+      <h1 class="hdwomen">Women</h1>
+      <br />
+      <section class="women-section" id="women">
+        <div class="product-card">
+          <img src="img/women1.jpeg" alt="Women Product 1" />
+          <div class="product-info">
+            <h3>Kurti Fabrik</h3>
+            <div class="rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+            </div>
+            <h1>20$</h1>
+            <button class="shop-now-btn">Shop Now</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="img/women2.jpeg" alt="Women Product 1" />
+          <div class="product-info">
+            <h3>Women's blue baggy Relaxed Destressed jeans</h3>
+            <div class="rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+            </div>
+            <h1>18$</h1>
+            <button class="shop-now-btn">Shop Now</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="img/women3.jpeg" alt="Women Product 1" />
+          <div class="product-info">
+            <h3>Fancy chinon black saree</h3>
+            <div class="rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+            </div>
+            <h1>23$</h1>
+            <button class="shop-now-btn">Shop Now</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="img/women4.jpeg" alt="Women Product 1" />
+          <div class="product-info">
+            <h3>Dangri jeans</h3>
+            <div class="rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+            </div>
+            <h1>32$</h1>
+            <button class="shop-now-btn">Shop Now</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="img/women5.jpeg" alt="Women Product 1" />
+          <div class="product-info">
+            <h3>Maroon semi-formal dress</h3>
+            <div class="rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+            </div>
+            <h1>31$</h1>
+            <button class="shop-now-btn">Shop Now</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="img/women6.jpeg" alt="Women Product 1" />
+          <div class="product-info">
+            <h3>Flower printed cotton saree</h3>
+            <div class="rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+            </div>
+            <h1>23$</h1>
+            <button class="shop-now-btn">Shop Now</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="img/women7.jpeg" alt="Women Product 1" />
+          <div class="product-info">
+            <h3>Maternity Shoot</h3>
+            <div class="rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+            </div>
+            <h1>48$</h1>
+            <button class="shop-now-btn">Shop Now</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="img/women8.jpeg" alt="Women Product 1" />
+          <div class="product-info">
+            <h3>Ripped jeans</h3>
+            <div class="rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+            </div>
+            <h1>26$</h1>
+            <button class="shop-now-btn">Shop Now</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="img/women9.jpeg" alt="Women Product 1" />
+          <div class="product-info">
+            <h3>Buttoned blue dress</h3>
+            <div class="rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+            </div>
+            <h1>32$</h1>
+            <button class="shop-now-btn">Shop Now</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="img/women10.jpeg" alt="Women Product 1" />
+          <div class="product-info">
+            <h3>Chikankari Kurti</h3>
+            <div class="rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+            </div>
+            <h1>22$</h1>
+            <button class="shop-now-btn">Shop Now</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="img/women11.jpeg" alt="Women Product 1" />
+          <div class="product-info">
+            <h3>printed saree</h3>
+            <div class="rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+            </div>
+            <h1>21$</h1>
+            <button class="shop-now-btn">Shop Now</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="img/women12.jpeg" alt="Women Product 1" />
+          <div class="product-info">
+            <h3>Chic denim dress</h3>
+            <div class="rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+            </div>
+            <h1>22$</h1>
+            <button class="shop-now-btn">Shop Now</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="img/women13.jpeg" alt="Women Product 1" />
+          <div class="product-info">
+            <h3>lace stripes dress</h3>
+            <div class="rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+            </div>
+            <h1>43$</h1>
+            <button class="shop-now-btn">Shop Now</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="img/women14.jpeg" alt="Women Product 1" />
+          <div class="product-info">
+            <h3>Indian weightless georgetts saree</h3>
+            <div class="rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+            </div>
+            <h1>49$</h1>
+            <button class="shop-now-btn">Shop Now</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="img/women15.jpeg" alt="Women Product 1" />
+          <div class="product-info">
+            <h3>laced design suit</h3>
+            <div class="rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+            </div>
+            <h1>16$</h1>
+            <button class="shop-now-btn">Shop Now</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="img/women16.jpeg" alt="Women Product 1" />
+          <div class="product-info">
+            <h3>Soft denim wrap For women</h3>
+            <div class="rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+            </div>
+            <h1>43$</h1>
+            <button class="shop-now-btn">Shop Now</button>
+          </div>
+        </div>
+
+        <!-- Add more product cards here -->
+      </section>
+      
+
+
+      <!----------men_section---------->
+
+      <h1 class="hdwomen">Men</h1>
+      <br />
+      <section class="women-section" id="men">
+        <div class="product-card">
+          <img src="img/men1.jpeg" alt="Women Product 1" />
+          <div class="product-info">
+            <h3>Metro men Leather sandal</h3>
+            <div class="rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+            </div>
+            <h1>20$</h1>
+            <button class="shop-now-btn">Shop Now</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="img/men2.jpeg" alt="Women Product 1" />
+          <div class="product-info">
+            <h3>Tagless unisex T-shirt</h3>
+            <div class="rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+            </div>
+            <h1>9$</h1>
+            <button class="shop-now-btn">Shop Now</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="img/men3.jpeg" alt="Women Product 1" />
+          <div class="product-info">
+            <h3>Wholesale mens jeans</h3>
+            <div class="rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+            </div>
+            <h1>23$</h1>
+            <button class="shop-now-btn">Shop Now</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="img/men4.jpeg" alt="Women Product 1" />
+          <div class="product-info">
+            <h3> men's Dangri jeans</h3>
+            <div class="rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+            </div>
+            <h1>22$</h1>
+            <button class="shop-now-btn">Shop Now</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="img/men5.jpeg" alt="Women Product 1" />
+          <div class="product-info">
+            <h3>denim jacket</h3>
+            <div class="rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+            </div>
+            <h1>31$</h1>
+            <button class="shop-now-btn">Shop Now</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="img/men6.jpeg" alt="Women Product 1" />
+          <div class="product-info">
+            <h3>Fashionable denim jacket</h3>
+            <div class="rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+            </div>
+            <h1>39$</h1>
+            <button class="shop-now-btn">Shop Now</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="img/men7.jpeg" alt="Women Product 1" />
+          <div class="product-info">
+            <h3>men dark orange t-shirt</t-shirt></h3>
+            <div class="rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+            </div>
+            <h1>6$</h1>
+            <button class="shop-now-btn">Shop Now</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="img/men8.jpeg" alt="Women Product 1" />
+          <div class="product-info">
+            <h3>black arrow slides</h3>
+            <div class="rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+            </div>
+            <h1>10$</h1>
+            <button class="shop-now-btn">Shop Now</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="img/men9.jpeg" alt="Women Product 1" />
+          <div class="product-info">
+            <h3>mens off-white black arrow slides</h3>
+            <div class="rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+            </div>
+            <h1>11$</h1>
+            <button class="shop-now-btn">Shop Now</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="img/men10.jpeg" alt="Women Product 1" />
+          <div class="product-info">
+            <h3>New fashionable jeans</h3>
+            <div class="rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+            </div>
+            <h1>22$</h1>
+            <button class="shop-now-btn">Shop Now</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="img/men11.jpeg" alt="Women Product 1" />
+          <div class="product-info">
+            <h3>didital printed cotton t-shirt</h3>
+            <div class="rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+            </div>
+            <h1>10$</h1>
+            <button class="shop-now-btn">Shop Now</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="img/men12.jpeg" alt="Women Product 1" />
+          <div class="product-info">
+            <h3>jaqueta jeans jacket</h3>
+            <div class="rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+            </div>
+            <h1>25$</h1>
+            <button class="shop-now-btn">Shop Now</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="img/men13.jpeg" alt="Women Product 1" />
+          <div class="product-info">
+            <h3>laser trends Design jeans</h3>
+            <div class="rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+            </div>
+            <h1>17$</h1>
+            <button class="shop-now-btn">Shop Now</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="img/men14.jpeg" alt="Women Product 1" />
+          <div class="product-info">
+            <h3>leather jacket</h3>
+            <div class="rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+            </div>
+            <h1>44$</h1>
+            <button class="shop-now-btn">Shop Now</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="img/men15.jpeg" alt="Women Product 1" />
+          <div class="product-info">
+            <h3>men's leather jacket</h3>
+            <div class="rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+            </div>
+            <h1>46$</h1>
+            <button class="shop-now-btn">Shop Now</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="img/men16.jpeg" alt="Women Product 1" />
+          <div class="product-info">
+            <h3>Winter mens jacket</h3>
+            <div class="rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+            </div>
+            <h1>43$</h1>
+            <button class="shop-now-btn">Shop Now</button>
+          </div>
+        </div>
+
+        <!-- Add more product cards here -->
+      </section>
+
+       <!----------Children---------->
+
+       <h1 class="hdwomen">Children</h1>
+       <br />
+       <section class="women-section" id="Children">
+         <div class="product-card">
+           <img src="img/Chil1.jpeg" alt="Women Product 1" />
+           <div class="product-info">
+             <h3>huaer & baby boys</h3>
+             <div class="rating">
+               <span class="star">&#9733;</span>
+               <span class="star">&#9733;</span>
+               <span class="star">&#9733;</span>
+               <span class="star">&#9733;</span>
+               <span class="star">&#9733;</span>
+             </div>
+             <h1>20$</h1>
+             <button class="shop-now-btn">Shop Now</button>
+           </div>
+         </div>
+ 
+         <div class="product-card">
+           <img src="img/chil2.jpeg" alt="Women Product 1" />
+           <div class="product-info">
+             <h3>zalio full sleeve washed boy denim jacket</h3>
+             <div class="rating">
+               <span class="star">&#9733;</span>
+               <span class="star">&#9733;</span>
+               <span class="star">&#9733;</span>
+               <span class="star">&#9733;</span>
+               <span class="star">&#9733;</span>
+             </div>
+             <h1>28$</h1>
+             <button class="shop-now-btn">Shop Now</button>
+           </div>
+         </div>
+ 
+         <div class="product-card">
+           <img src="img/chil3.jpeg" alt="Women Product 1" />
+           <div class="product-info">
+             <h3>new kids boys suits</h3>
+             <div class="rating">
+               <span class="star">&#9733;</span>
+               <span class="star">&#9733;</span>
+               <span class="star">&#9733;</span>
+               <span class="star">&#9733;</span>
+               <span class="star">&#9733;</span>
+             </div>
+             <h1>23$</h1>
+             <button class="shop-now-btn">Shop Now</button>
+           </div>
+         </div>
+ 
+         <div class="product-card">
+           <img src="img/chil4.jpeg" alt="Women Product 1" />
+           <div class="product-info">
+             <h3>baby jacket & jeans</h3>
+             <div class="rating">
+               <span class="star">&#9733;</span>
+               <span class="star">&#9733;</span>
+               <span class="star">&#9733;</span>
+               <span class="star">&#9733;</span>
+               <span class="star">&#9733;</span>
+             </div>
+             <h1>24$</h1>
+             <button class="shop-now-btn">Shop Now</button>
+           </div>
+         </div>
+ 
+         <div class="product-card">
+           <img src="img/chil5.jpeg" alt="Women Product 1" />
+           <div class="product-info">
+             <h3>nap king pyjamas kids boy</h3>
+             <div class="rating">
+               <span class="star">&#9733;</span>
+               <span class="star">&#9733;</span>
+               <span class="star">&#9733;</span>
+               <span class="star">&#9733;</span>
+               <span class="star">&#9733;</span>
+             </div>
+             <h1>17$</h1>
+             <button class="shop-now-btn">Shop Now</button>
+           </div>
+         </div>
+ 
+         <div class="product-card">
+           <img src="img/chil6.jpeg" alt="Women Product 1" />
+           <div class="product-info">
+             <h3>clothing shirt for baby boy</h3>
+             <div class="rating">
+               <span class="star">&#9733;</span>
+               <span class="star">&#9733;</span>
+               <span class="star">&#9733;</span>
+               <span class="star">&#9733;</span>
+               <span class="star">&#9733;</span>
+             </div>
+             <h1>13$</h1>
+             <button class="shop-now-btn">Shop Now</button>
+           </div>
+         </div>
+ 
+         <div class="product-card">
+           <img src="img/chil7.jpeg" alt="Women Product 1" />
+           <div class="product-info">
+             <h3>buy blue sets for baby </h3>
+             <div class="rating">
+               <span class="star">&#9733;</span>
+               <span class="star">&#9733;</span>
+               <span class="star">&#9733;</span>
+               <span class="star">&#9733;</span>
+               <span class="star">&#9733;</span>
+             </div>
+             <h1>22$</h1>
+             <button class="shop-now-btn">Shop Now</button>
+           </div>
+         </div>
+ 
+         <div class="product-card">
+           <img src="img/chil8.jpeg" alt="Women Product 1" />
+           <div class="product-info">
+             <h3>dark jacket kid wear</h3>
+             <div class="rating">
+               <span class="star">&#9733;</span>
+               <span class="star">&#9733;</span>
+               <span class="star">&#9733;</span>
+               <span class="star">&#9733;</span>
+               <span class="star">&#9733;</span>
+             </div>
+             <h1>26$</h1>
+             <button class="shop-now-btn">Shop Now</button>
+           </div>
+         </div>
+ 
+         <div class="product-card">
+           <img src="img/chil9.jpeg" alt="Women Product 1" />
+           <div class="product-info">
+             <h3>two-pice set</h3>
+             <div class="rating">
+               <span class="star">&#9733;</span>
+               <span class="star">&#9733;</span>
+               <span class="star">&#9733;</span>
+               <span class="star">&#9733;</span>
+               <span class="star">&#9733;</span>
+             </div>
+             <h1>20$</h1>
+             <button class="shop-now-btn">Shop Now</button>
+           </div>
+         </div>
+ 
+         <div class="product-card">
+           <img src="img/chil10.jpeg" alt="Women Product 1" />
+           <div class="product-info">
+             <h3>cotton two-pice set </h3>
+             <div class="rating">
+               <span class="star">&#9733;</span>
+               <span class="star">&#9733;</span>
+               <span class="star">&#9733;</span>
+               <span class="star">&#9733;</span>
+               <span class="star">&#9733;</span>
+             </div>
+             <h1>15$</h1>
+             <button class="shop-now-btn">Shop Now</button>
+           </div>
+         </div>
+ 
+         <div class="product-card">
+           <img src="img/chil11.jpeg" alt="Women Product 1" />
+           <div class="product-info">
+             <h3>baby self</h3>
+             <div class="rating">
+               <span class="star">&#9733;</span>
+               <span class="star">&#9733;</span>
+               <span class="star">&#9733;</span>
+               <span class="star">&#9733;</span>
+               <span class="star">&#9733;</span>
+             </div>
+             <h1>32$</h1>
+             <button class="shop-now-btn">Shop Now</button>
+           </div>
+         </div>
+ 
+         <div class="product-card">
+           <img src="img/chil12.jpeg" alt="Women Product 1" />
+           <div class="product-info">
+             <h3>Robecult baby Girl</h3>
+             <div class="rating">
+               <span class="star">&#9733;</span>
+               <span class="star">&#9733;</span>
+               <span class="star">&#9733;</span>
+               <span class="star">&#9733;</span>
+               <span class="star">&#9733;</span>
+             </div>
+             <h1>25$</h1>
+             <button class="shop-now-btn">Shop Now</button>
+           </div>
+         </div>
+         <!-- Add more product cards here -->
+       </section>
+    </header>
+
+    <footer class="footer">
+      <div class="footer-container">
+          <div class="contact-info">
+              <h3>Contact Us</h3>
+              <p>Email: example@gmail.com</p>
+              <p>Phone: +1234567890</p>
+              <p>Facebook: <a href="#">Example</a></p>
+              <p>Instagram: <a href="#">Example</a></p>
+              <p>Helpline: 1800-123-4567</p>
+          </div>
+          <div class="address">
+              <h3>Address</h3>
+              <p>Bhagalpur, Bihar 853201</p>
+              <p>Patna, Bihar (Pincode: XXXXXX)</p>
+          </div>
+          <div class="owner-info">
+              <h3>Owner</h3>
+              <p>Owner: Pushpam Kumar</p>
+          </div>
+      </div>
+  </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
